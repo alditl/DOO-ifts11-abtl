@@ -1,6 +1,5 @@
 import json
 
-
 class Documento:
     def __init__(self, id, contenido=None):
         self.id = id

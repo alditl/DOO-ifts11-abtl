@@ -1,5 +1,5 @@
-# main.py
-from .utils.database import BBDD_Documental
+from database import BBDD_Documental
+from documento import Documento
 import json
 
 
@@ -28,7 +28,7 @@ def main():
             nombre_coleccion = input("Ingrese el nombre de la colección: ")
             coleccion = db.obtener_coleccion(nombre_coleccion)
             ruta_csv = input("Ingrese la ruta del archivo CSV: ")
-            coleccion.import_csv(nombre_coleccion, ruta_csv)
+            coleccion.importardoc(ruta_csv)
         
         elif opcion == "3":
             nombre_coleccion = input("Ingrese el nombre de la colección: ")

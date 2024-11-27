@@ -14,8 +14,6 @@ class str2Doc (object):
             return diccionario
 
 
-s2d = str2Doc("Nombre,Apellido,Edad,Email,Telefono")
-print(s2d.keys)
-print(s2d.convert("Juan,García,27,juan.garcía@ejemplo.com,555-0122-5544"))
+
 
 
