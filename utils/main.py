@@ -50,6 +50,7 @@ def main():
             coleccion = db.obtener_coleccion(nombre_coleccion)
             if coleccion:
                 coleccion.eliminar_documento(doc_id)
+                print("Documento eliminado")
         
         elif opcion == "5":
             nombre_coleccion = input("Ingrese el nombre de la colección: ")

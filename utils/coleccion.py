@@ -14,7 +14,7 @@ class Coleccion:
     def eliminar_documento(self, id_documento):
         if id_documento in self.documentos:
             del self.documentos[id_documento]
-            print("Documento eliminado")
+            
 
     def buscar_documento(self, id_documento):
         return self.documentos.get(id_documento, None)
@@ -31,8 +31,6 @@ class Coleccion:
                 auto = auto + 1
                 linea = file.readline()
     # C:\\Users\\aldut\\Desktop\\IFTS11\\DESARROLLO DE SIS O.O\\DOO-ifts11-abtl\\files\\BBDD.csv                
-
-
 
     def listar_documento(self) -> list[Documento]:
         total = []
