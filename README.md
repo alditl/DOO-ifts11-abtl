@@ -14,14 +14,14 @@
 
 ### Estructura del proyecto
 .
-├── main.py              # Punto de entrada principal del programa
-├── utils/               # Módulos auxiliares
-│   ├── coleccion.py     # Clase Coleccion para manejar documentos
-│   ├── database.py      # Clase BBDD_Documental para gestionar colecciones
-│   ├── documento.py     # Modelo Documento (representación de un documento)
-│   ├── str2doc.py       # Herramienta para convertir lineas en documentos
-├── files/               # Carpeta opcional para almacenar archivos CSV de entrada
-└── README.md            # Comentarios del proyecto
+├── main.py              
+├── utils/               
+│   ├── coleccion.py      
+│   ├── database.py      
+│   ├── documento.py     
+│   ├── str2doc.py       
+├── files/               
+└── README.md            
 
 
 ### Uso
