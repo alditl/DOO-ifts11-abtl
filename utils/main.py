@@ -47,7 +47,7 @@ def main():
         elif opcion == "4":
             nombre_coleccion = input("Ingrese el nombre de la colección: ")
             doc_id = int(input("Ingrese el ID del documento a eliminar: "))
-            coleccion = db.ob(nombre_coleccion)
+            coleccion = db.obtener_coleccion(nombre_coleccion)
             if coleccion:
                 coleccion.eliminar_documento(doc_id)
         
