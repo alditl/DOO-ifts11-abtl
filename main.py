@@ -1,5 +1,5 @@
 # main.py
-from database import BBDD_Documental
+from .utils.database import BBDD_Documental
 import json
 
 
@@ -35,7 +35,7 @@ def main():
             doc_id = int(input("Ingrese el ID del documento: "))
             coleccion = db.obtener_coleccion(nombre_coleccion)
             if coleccion:
-                documento = coleccion.get_document(doc_id)
+                documento = coleccion.buscar_documento(doc_id)
                 if documento:
                     print("Documento encontrado:")
                     print(documento)
@@ -49,13 +49,13 @@ def main():
             doc_id = int(input("Ingrese el ID del documento a eliminar: "))
             coleccion = db.ob(nombre_coleccion)
             if coleccion:
-                coleccion.delete_document(doc_id)
+                coleccion.eliminar_documento(doc_id)
         
         elif opcion == "5":
             nombre_coleccion = input("Ingrese el nombre de la colección: ")
             coleccion = db.obtener_coleccion(nombre_coleccion)
             if coleccion:
-                documentos = coleccion.list_documents()
+                documentos = coleccion.listar_documento()
                 if documentos:
                     print("\n--- Lista de Documentos ---")
                     for doc in documentos:

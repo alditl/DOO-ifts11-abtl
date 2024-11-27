@@ -14,6 +14,12 @@ class Coleccion:
 
     def buscar_documento(self, id_documento):
         return self.documento.get(id_documento, None)
-    
+
+    def listar_documento(self) -> list[Documento]:
+        total = []
+        for i in self.documentos:
+            total.append(self.documentos[i])
+        return total
+
     def __str__(self):
         return f"Coleccion {self.nombre} con len{(self.documentos)} "
