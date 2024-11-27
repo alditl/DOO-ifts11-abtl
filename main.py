@@ -1,5 +1,7 @@
-from database import BBDD_Documental
-from documento import Documento
+from utils.database import BBDD_Documental
+from utils.coleccion import Coleccion
+from utils.documento import Documento
+
 import json
 
 

@@ -1,8 +1,8 @@
 #Una "Coleccion" contiene varios documentos 
 #Represento con diccionarios
+from .documento import Documento
+from .str2doc import str2Doc
 
-from documento import Documento
-from str2doc import str2Doc
 class Coleccion:
     def __init__(self, nombre):
         self.nombre = nombre

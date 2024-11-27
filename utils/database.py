@@ -1,6 +1,6 @@
-from coleccion import Coleccion
-from documento import Documento
-from str2doc import str2Doc
+from .coleccion import Coleccion
+from .documento import Documento
+from .str2doc import str2Doc
 
 class BBDD_Documental:
     def __init__(self):
